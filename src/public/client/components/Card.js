@@ -6,7 +6,7 @@ class Card extends Component {
     return (
       <figure className="grid-figure">
         <div className="grid-photo-wrap">
-            <img src={this.props.item.img} alt={this.props.item.name} className='grid-photo' />
+          <a href={this.props.item.url}><img src={this.props.item.img} alt={this.props.item.name} className='grid-photo' /></a>
           <figcaption>
             <h2>{this.props.item.name}</h2>
             <div className='control-buttons'>
