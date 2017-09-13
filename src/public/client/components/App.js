@@ -5,7 +5,8 @@ import Main from './Main';
 
 function mapStateToProps(state) {
   return {
-    items: state.items
+    items: state.items,
+    count: state.count
   }
 }
 function mapDispachToProps(dispatch) {

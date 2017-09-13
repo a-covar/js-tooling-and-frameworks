@@ -7,6 +7,13 @@ if(process.env.NODE_ENV !== 'test'){
   app.use(logger('combined'));
 }
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET,DELETE,POST,PUT');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  next();
+});
+
 app.get('/api/items', function (req, res) {
   if(req.query.q === 'five'){
     let shortList = data.items.slice(0, 5);

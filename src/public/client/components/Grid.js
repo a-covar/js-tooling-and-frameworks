@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './Card';
 
 const Grid = React.createClass({
-
+  
   render() {
     return (
       <div className="photo-grid">

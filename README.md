@@ -7,19 +7,26 @@ This app is a simple example on how to use React and Redux. The API Server has o
 
 The React App allows the user to mark their opinion of each item with a positive or negative reaction (no need to persistent data). Once they have made at least 3 reactions, fetch the remainder of your items from the API and add them to the view.
 
-#### TO EXECUTE
+<img align="center" src="./images/video.gif"/>
+
+
+
+#### TRY IT !!!
 
 Run the Server
-'''
+```bash
 cd src/server
 npm install
 npm test
 npm start
-'''
+```
 
 Run the UI
-'''
+```bash
 cd src/public
 npm install
 npm start
-'''
+```
+
+#### Lighthouse Score
+<img align="center" src="./images/lighthouse_scores.png"/>
